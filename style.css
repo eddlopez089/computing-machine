@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -9,22 +11,23 @@
 }
 
 img {
-    max-width: 100%;
+    max-width: 100dvh;
+    max-width: 100vh;
     width: 290px;
     height: 450px;
     margin-top: 30%;
     border-radius: 8px 0 0 8px;
     justify-self: end;
-    
+
 
 }
 
-body{
+body {
     min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
 }
 
-p{
+p {
     color: hsl(228, 12%, 48%);
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
@@ -35,25 +38,25 @@ p{
 
 }
 
-.card{
+.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
 
 }
 
-.product__content{
+.product__content {
     display: grid;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 8px 8px 0;
     width: 290px;
     height: 450px;
     margin-top: 30%;
-    
-    
+
+
 }
 
-#product{
+#product {
     color: hsl(228, 12%, 48%);
     font-family: "Montserrat", sans-serif;
     font-size: 0.7rem;
@@ -62,8 +65,8 @@ p{
 
 }
 
-#perfume__name{
-    font-family: "Fraunces",sans-serif;
+#perfume__name {
+    font-family: "Fraunces", sans-serif;
     font-size: 2rem;
     padding: 1rem 2rem 1rem 2rem;
     line-height: 2rem;
@@ -71,7 +74,12 @@ p{
 
 }
 
-.current__price{
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.current__price {
     color: hsl(158, 36%, 37%);
     font-size: 2rem;
     font-family: "Fraunces", sans-serif;
@@ -79,19 +87,23 @@ p{
 
 }
 
-.original__price{
+.original__price {
     text-decoration: line-through;
     position: relative;
-    text-align: left;
+    margin-top: 10px;
+    
+    
+    
+    
 
 }
 
 
-.btn_add{
+.btn_add {
 
-    
+
     justify-self: center;
-    font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     border: none;
     border-radius: 8px;
@@ -101,13 +113,17 @@ p{
     font-weight: 700;
     padding: 15px;
     width: 80%;
+    height: 50px;
     margin-bottom: 1.5rem;
     cursor: pointer;
 
-
 }
 
-.icon{
+.btn_add:active{
+    background-color: hsl(108,19%,21%)
+}
+
+.icon {
     background: url(../images/icon-cart.svg) no-repeat;
     float: left;
     width: 20px;
@@ -118,14 +134,15 @@ p{
 
 .attribution {
     margin-top: 1rem;
-    font-size: 11px; 
-    text-align: center;  
+    font-size: 11px;
+    text-align: center;
 }
 
-    .attribution a { 
-        color: hsl(228, 45%, 44%); 
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
-.container{
+.container {
     display: grid;
 }
+
