@@ -103,6 +103,7 @@ p {
 
 
     justify-self: center;
+    display: inline-flex;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     border: none;
